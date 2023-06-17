@@ -44,7 +44,7 @@ function App() {
   }
 
   const remWatchlistMovie = (movie) => {
-    const newWatchlist = watchlist.filter((running) => running.imdbID != movie.imdbID);
+    const newWatchlist = watchlist.filter((running) => running.imdbID !== movie.imdbID);
     setWatchlist(newWatchlist);
     saveLocal(newWatchlist);
   }
@@ -63,7 +63,7 @@ function App() {
       </div>
 
       <div className="search-bar-row">
-        <MovieHeading heading="Your Watchlist"></MovieHeading>
+        <MovieHeading heading={watchlist.length>0?"Your Watchlist":"Watchlist is empty"}></MovieHeading>
       </div>
 
       <div className="movie-list">
@@ -73,5 +73,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
