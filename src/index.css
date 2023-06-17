@@ -38,6 +38,17 @@ body{
   height: 20px;
 }
 
+.search-box input{
+  height: 20px;
+  width: 210px;
+  border: 1px grey solid;
+  border-radius: 6px;
+}
+.search-box input ::placeholder{
+  margin-left: 50px;
+  color: black;
+}
+
 .movie-poster{
   position:relative;
   transition: transform 0.1s;
