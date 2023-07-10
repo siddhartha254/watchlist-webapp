@@ -63,7 +63,7 @@ function App() {
       </div>
 
       <div className="search-bar-row">
-        <MovieHeading heading={watchlist.length>0?"Your Watchlist":"Watchlist is empty"}></MovieHeading>
+        <MovieHeading heading="Your Watchlist"></MovieHeading>
       </div>
 
       <div className="movie-list">

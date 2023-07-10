@@ -6,9 +6,9 @@ const MovieList = (props) => {
 
     return (
         <div className="movie-list">
-        {movies.map((movie) => (
+        {movies?.map((movie) => (
             <div className="movie-poster" key={movie.imdbID}>
-                <img src={movie.Poster}></img>
+                <img src={movie.Poster} alt="movie-poster"></img>
                 <div className="overlay" onClick={ () => addmovie(movie)}>
                     <OverlayText></OverlayText>
                 </div>
