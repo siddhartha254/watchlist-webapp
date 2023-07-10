@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/watchlist-webapp/static/css/main.bce00a47.css",
-    "main.js": "/watchlist-webapp/static/js/main.93643ef1.js",
+    "main.js": "/watchlist-webapp/static/js/main.cc47dee6.js",
     "index.html": "/watchlist-webapp/index.html",
     "main.bce00a47.css.map": "/watchlist-webapp/static/css/main.bce00a47.css.map",
-    "main.93643ef1.js.map": "/watchlist-webapp/static/js/main.93643ef1.js.map"
+    "main.cc47dee6.js.map": "/watchlist-webapp/static/js/main.cc47dee6.js.map"
   },
   "entrypoints": [
     "static/css/main.bce00a47.css",
-    "static/js/main.93643ef1.js"
+    "static/js/main.cc47dee6.js"
   ]
 }
