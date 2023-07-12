@@ -38,8 +38,15 @@ function App() {
   },[])
 
   const addWatchlistMovie = (movie) => {
-    setWatchlist(current => [...current, movie]);
-    saveLocal(watchlist);
+
+    if (!Array.isArray(watchlist)) {
+      console.error("watchlist is not an array");
+      return;
+    }
+    let newWatchlist = [...watchlist];
+    newWatchlist.push(movie);
+    setWatchlist(newWatchlist);
+    saveLocal(newWatchlist);
   }
 
   const remWatchlistMovie = (movie) => {
