@@ -1,4 +1,5 @@
 # Watchlist Tracker
+Deployed at: https://watchlist-tracker.netlify.app/ <br>
 Website made using React.js where users can search for their favourite movies and shows and add/remove them from their watchlist.
 
 ## Run Locally
