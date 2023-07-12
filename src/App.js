@@ -9,7 +9,7 @@ import './index.css';
 function App() {
 
   const [movies, setMovies] = useState([]);
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState("prestige");
   const [watchlist, setWatchlist] = useState([]);
 
   const APIMovieRequest = async (searchValue) => {
