@@ -41,6 +41,8 @@ function App() {
 
   const addWatchlistMovie = (movie) => {
 
+    console.log("watchlist:",watchlist);
+
     if (!Array.isArray(watchlist)) {
       console.error("watchlist is not an array");
       return;
