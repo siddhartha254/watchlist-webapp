@@ -38,9 +38,8 @@ function App() {
   },[])
 
   const addWatchlistMovie = (movie) => {
-    const newWatchlist = [...watchlist, movie];
-    setWatchlist(newWatchlist);
-    saveLocal(newWatchlist);
+    setWatchlist(current => [...current, movie]);
+    saveLocal(watchlist);
   }
 
   const remWatchlistMovie = (movie) => {
