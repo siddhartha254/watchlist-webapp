@@ -44,7 +44,8 @@ function App() {
     console.log("watchlist:",watchlist);
 
     if (!Array.isArray(watchlist)) {
-      watchlist = [];
+      console.error("watchlist is not an array");
+      return;
     }
     let newWatchlist = [...watchlist];
     newWatchlist.push(movie);
