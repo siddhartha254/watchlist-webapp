@@ -29,11 +29,13 @@ function App() {
   }, [searchValue])
 
   const saveLocal=(items)=>{
+    console.log('Items:', items);
     localStorage.setItem('my-watchlist', JSON.stringify(items));
   }
 
   useEffect(()=>{
     const loadWatchlist=JSON.parse(localStorage.getItem('my-watchlist'));
+    console.log('Loaded Watchlist:', loadWatchlist);
     setWatchlist(loadWatchlist);
   },[])
 
